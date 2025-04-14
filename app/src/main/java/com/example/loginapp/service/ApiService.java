@@ -1,0 +1,11 @@
+package com.example.loginapp.service;
+
+import com.example.loginapp.model.Post;
+import java.util.List;
+import retrofit2.Call;
+import retrofit2.http.GET;
+
+public interface ApiService {
+    @GET("posts")
+    Call<List<Post>> getPosts();
+}
